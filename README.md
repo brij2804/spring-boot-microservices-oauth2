@@ -6,6 +6,8 @@ Springboot Microservices with OAuth2 projects
 - JWT token code 
 - Custom Scope code
 - Checking the scope
+- Securing endpoints to a specfic role
+- Checking the Role
 
 ### Tech Stack
 - java17
