@@ -7,7 +7,7 @@ Springboot Microservices with OAuth2 projects
 - Custom Scope code
 - Checking the scope
 - Securing endpoints to a specfic role
-- Checking the Role
+- Checking the Role by registering JwtAuthenticationConverter to HttpSecurity
 
 ### Tech Stack
 - java17
