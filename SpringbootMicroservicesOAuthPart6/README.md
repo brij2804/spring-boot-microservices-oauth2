@@ -3,7 +3,8 @@ Project has microservice code for API Gateway and multiple resource server
 ### module
 - springboot-users-resourceserver
 - springboot-api-gateway
-- 
+- springboot-album-resourceserver
+- springboot-photos-resourceserver
 
 ### Concepts
 - API Gateway
