@@ -19,12 +19,12 @@ spring:
         filters:
           - RemoveRequestHeader=Cookie
       - id: photos
-          uri: http://localhost:8090
-          predicates:
-            - Path=/photos
-            - Method=GET
-          filters:
-            - RemoveRequestHeader=Cookie
+        uri: http://localhost:8090
+        predicates:
+          - Path=/photos
+          - Method=GET
+        filters:
+          - RemoveRequestHeader=Cookie
 server:
   port: 8082
 
