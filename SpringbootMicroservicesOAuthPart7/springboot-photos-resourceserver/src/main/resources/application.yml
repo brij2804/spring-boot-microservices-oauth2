@@ -1,6 +1,6 @@
 spring:
   application:
-    name: springboot-photos-resourceserver
+    name: photos-resourceserver
   security:
     oauth2:
       resourceserver:

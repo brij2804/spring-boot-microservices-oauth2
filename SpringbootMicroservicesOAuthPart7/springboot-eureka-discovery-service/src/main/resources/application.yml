@@ -1,1 +1,19 @@
+spring:
+  application:
+    name: springboot-eureka-discovery-service
 
+server:
+  port: 8010
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+
+logging:
+  level:
+    org:
+      springframework: debug
+    com:
+      netflix:
+        eureka: OFF
+        discovery: OFF

@@ -18,4 +18,6 @@ Project has microservice code for Eureka Discovery Service
 - spring-boot-devtools
 - spring-cloud-starter-gateway
 - spring-boot-starter-actuator
+- spring-cloud-starter-netflix-eureka-client
+- spring-cloud-starter-netflix-eureka-server
 - Keycloak
