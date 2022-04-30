@@ -1,10 +1,11 @@
 Project has microservice code for Eureka Discovery Service
 
-### module
+### modules
 - springboot-users-resourceserver
 - springboot-api-gateway
 - springboot-album-resourceserver
 - springboot-photos-resourceserver
+- springboot-eureka-discovery-service
 
 ### Concepts
 - Eureka Discovery Service
