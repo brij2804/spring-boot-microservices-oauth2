@@ -1,0 +1,34 @@
+spring:
+  application:
+    name: springboot-api-gateway
+  cloud:
+    gateway:
+      routes:
+      - id: users-status-check
+        uri: http://localhost:8081
+        predicates:
+        - Path=/users/status/check
+        - Method=GET
+        filters:
+        - RemoveRequestHeader=Cookie
+      - id: albums
+        uri: http://localhost:8091
+        predicates:
+          - Path=/albums
+          - Method=GET
+        filters:
+          - RemoveRequestHeader=Cookie
+      - id: photos
+        uri: http://localhost:8090
+        predicates:
+          - Path=/photos
+          - Method=GET
+        filters:
+          - RemoveRequestHeader=Cookie
+server:
+  port: 8082
+
+logging:
+  level:
+    org:
+      springframework: debug

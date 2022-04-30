@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: springboot-album-resourceserver
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: http://localhost:8080/realms/appsdeveloperrealm/protocol/openid-connect/certs
+server:
+  port: 8091
+
+logging:
+  level:
+    org:
+      springframework: debug
