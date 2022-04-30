@@ -1,6 +1,7 @@
 # spring-boot-microservices-oauth2
 Springboot Microservices with OAuth2 projects
 
+
 ### Concepts
 - PKCE code verifier and code challenge generator
 - JWT token code 
@@ -11,6 +12,8 @@ Springboot Microservices with OAuth2 projects
 - Method level security
 - PreAuthorized annotations
 - Secured annotations 
+- API Gateway
+- Multiple Resource Servers 
 
 ### Tech Stack
 - java17
@@ -18,4 +21,16 @@ Springboot Microservices with OAuth2 projects
 - spring-boot-starter-oauth2-resource-server
 - spring-boot-starter-web
 - spring-boot-devtools
+- spring-cloud-starter-gateway
+- spring-boot-starter-actuator
 - Keycloak
+
+### URLs
+|Method                                      | URL|
+| :----------------------------------------------|:-------------|
+|Code Grant Authorize                                   | http://localhost:8080/realms/appsdeveloperrealm/protocol/openid-connect/auth?response_type=code&client_id=photo-app-client-custom-roles&state=asdfgasdf&scope=openid profile&redirect_uri=http://localhost:8083/callback (GET)|
+|Exchange Code For Token                       | http://localhost:8080/realms/appsdeveloperrealm/protocol/openid-connect/token|
+|User Status - Direct Call | http://localhost:8081/users/status/check |
+|API Gateway User Status  | http://localhost:8082/users/status/check |
+|API Gateway Get Albums                        | http://localhost:8082/albums |
+|API Gateway Get Photos                        | http://localhost:8082/photos|
