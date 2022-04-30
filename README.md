@@ -37,3 +37,4 @@ Springboot Microservices with OAuth2 projects
 |API Gateway User Status  | http://localhost:8082/users/status/check |
 |API Gateway Get Albums                        | http://localhost:8082/albums |
 |API Gateway Get Photos                        | http://localhost:8082/photos|
+|Eureka                        | http://localhost:8010|
