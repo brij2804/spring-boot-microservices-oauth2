@@ -1,0 +1,39 @@
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      routes:
+      - id: users
+        uri: lb://users-resourceserver
+        predicates:
+        - Path=/users/status/check
+        - Method=GET
+        filters:
+        - RemoveRequestHeader=Cookie
+      - id: albums
+        uri: lb://album-resourceserver
+        predicates:
+          - Path=/albums
+          - Method=GET
+        filters:
+          - RemoveRequestHeader=Cookie
+      - id: photos
+        uri: lb://photos-resourceserver
+        predicates:
+          - Path=/photos
+          - Method=GET
+        filters:
+          - RemoveRequestHeader=Cookie
+server:
+  port: 8082
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8010/eureka
+
+#logging:
+  #level:
+    #org:
+      #springframework: debug
