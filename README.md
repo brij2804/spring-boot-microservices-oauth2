@@ -15,6 +15,7 @@ Springboot Microservices with OAuth2 projects
 - API Gateway
 - Multiple Resource Servers 
 - Eureka Discovery Service
+- Load Balancing
 
 ### Tech Stack
 - java17

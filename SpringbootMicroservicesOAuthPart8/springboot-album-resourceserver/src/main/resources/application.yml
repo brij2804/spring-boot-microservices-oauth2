@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: album-resourceserver
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: http://localhost:8080/realms/appsdeveloperrealm/protocol/openid-connect/certs
+server:
+  port: 8091
+
+#logging:
+  #level:
+    #org:
+      #springframework: debug
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8010/eureka
