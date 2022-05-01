@@ -15,6 +15,7 @@ Project has code for Photo App Web Client
 - org.springframework.boot: 2.6.7
 - spring-boot-starter-oauth2-resource-server
 - spring-boot-starter-web
+- spring-boot-starter-thymeleaf
 - spring-boot-devtools
 - spring-cloud-starter-gateway
 - spring-boot-starter-actuator

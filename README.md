@@ -16,6 +16,7 @@ Springboot Microservices with OAuth2 projects
 - Multiple Resource Servers 
 - Eureka Discovery Service
 - Load Balancing
+- Web Client
 
 ### Tech Stack
 - java17
@@ -25,6 +26,7 @@ Springboot Microservices with OAuth2 projects
 - spring-boot-devtools
 - spring-cloud-starter-gateway
 - spring-boot-starter-actuator
+- spring-boot-starter-thymeleaf
 - spring-cloud-starter-netflix-eureka-client
 - spring-cloud-starter-netflix-eureka-server
 - Keycloak
