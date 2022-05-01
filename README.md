@@ -22,6 +22,7 @@ Springboot Microservices with OAuth2 projects
 - java17
 - org.springframework.boot: 2.6.7
 - spring-boot-starter-oauth2-resource-server
+- spring-boot-starter-oauth2-client
 - spring-boot-starter-web
 - spring-boot-devtools
 - spring-cloud-starter-gateway

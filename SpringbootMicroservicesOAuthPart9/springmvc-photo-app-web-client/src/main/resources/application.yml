@@ -1,3 +1,18 @@
 spring:
   application:
     name: photo-app-web-client
+  security:
+    oauth2:
+      client:
+        registration:
+          mywebclient:
+            clientId: photo-app-web-client
+            clientSecret:
+            scope:
+              - openid
+              - profile
+              - roles
+            authorizationGrantType: authorization_code
+            redirectUri:
+server:
+  port: 8087
