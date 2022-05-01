@@ -5,6 +5,8 @@ import java.util.Arrays;
 import java.util.List;
 
 import com.brijesh.oauth.response.PhotoRest;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.Environment;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -12,6 +14,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/photos")
 public class PhotosController {
+
+    @Autowired
+    Environment env;
     
     @GetMapping
     public List<PhotoRest> getPhotos() {
@@ -30,8 +35,8 @@ public class PhotosController {
         photo2.setUserId("1");
         photo2.setPhotoTitle("Photo 2 title");
         photo2.setPhotoDescription("Photo 2 description");
-        photo2.setPhotoUrl("Photo 2 URL"); 
-         
+        photo2.setPhotoUrl("Photo 2 URL");
+        System.out.println("Running on port.."+ env.getProperty("local.server.port"));
         return Arrays.asList(photo1, photo2);
     }
  
